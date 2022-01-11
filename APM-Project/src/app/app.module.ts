@@ -14,12 +14,16 @@ import {MatTableModule} from '@angular/material/table';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {CdkTableModule} from '@angular/cdk/table';
+import { ConvertToSpacesPipe } from './shared/convert-to-spaces.pipe';
+import { StarComponent } from './shared/star.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductListComponent,
     PraticeComponent,
+    ConvertToSpacesPipe,
+    StarComponent,
 
   ],
   imports: [
