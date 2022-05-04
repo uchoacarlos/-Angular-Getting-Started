@@ -18,14 +18,21 @@ import {MatTableModule} from '@angular/material/table';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {CdkTableModule} from '@angular/cdk/table';
+import { ProductDetailComponent } from './products/product-detail/product-detail.component';
+import { NavigationComponent } from './navigation/navigation.component';
+import { AppRoutingModule } from './app-routing.module';
+import { WelcomeComponent } from './home/welcome.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    WelcomeComponent,
     ProductListComponent,
     PraticeComponent,
     ConvertToSpacesPipe,
     StarComponent,
+    ProductDetailComponent,
+    NavigationComponent,
 
   ],
   imports: [
@@ -39,7 +46,8 @@ import {CdkTableModule} from '@angular/cdk/table';
     ReactiveFormsModule,
     FormsModule,
     MatButtonModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
 
   ],
   bootstrap: [AppComponent]
