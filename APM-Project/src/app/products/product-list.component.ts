@@ -8,7 +8,7 @@ import { ProductService } from "./services/product.services";
     templateUrl: './product-list.component.html',
     styleUrls: ['./product-list.component.css'],
 })
-export class ProductListComponent implements OnInit, OnDestroy {
+export class ProductListComponent implements OnInit {
     public pageTitle: string = 'Product List';
     public imageWidth = 20;
     public buttomWidth = 150;
@@ -59,9 +59,5 @@ export class ProductListComponent implements OnInit, OnDestroy {
 
     onRatingClicked(message: string): void{
         this.pageTitle = 'Product List: ' + message;
-    }
-
-    ngOnDestroy(): void {
-      this.sub.unsubscribe();
     }
 }

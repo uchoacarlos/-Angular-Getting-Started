@@ -9,7 +9,7 @@ import { ProductDetailComponent } from './products/product-detail/product-detail
 const routes: Routes = [
   { path: 'welcome', component: WelcomeComponent },
   { path: 'products', component: ProductListComponent },
-  { path: 'product/:id', component: ProductDetailComponent },
+  { path: 'product/:id', canActivate: [ProductDetailComponent], component: ProductDetailComponent },
   { path: '', redirectTo: 'welcome', pathMatch: 'full'  },
   { path: '**', redirectTo: 'welcome', pathMatch: 'full'  }
 
