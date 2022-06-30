@@ -8,11 +8,11 @@ import { User } from '../user'
 
 
 @Component({
-  selector: 'pm-pratice',
-  templateUrl: './pratice.component.html',
-  styleUrls: ['./pratice.component.css']
+  selector: 'pm-practice',
+  templateUrl: './practice.component.html',
+  styleUrls: ['./practice.component.css']
 })
-export class PraticeComponent implements OnInit {
+export class PracticeComponent implements OnInit {
 
   data: any;
   formulario!: FormGroup;
@@ -55,13 +55,13 @@ export class PraticeComponent implements OnInit {
 
   /*  obterDados() {
      this.userList.push(this.formulario.value)
-     
+
      this.dataSource = this.userList;
- 
+
      console.log(this.userList);
- 
+
      this.formulario.reset();
-     
+
    } */
 
 
